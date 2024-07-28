@@ -89,7 +89,7 @@ public class registration extends AppCompatActivity {
                     rg_email.setError("Type A Valid Email Here");
                 }else if (Password.length()<6){
                     progressDialog.dismiss();
-                    rg_password.setError("Password Must Be 6 Characters Or More");
+                    rg_password.setError("The Password Doesn't Match");
                 }else if (!Password.equals(cPassword)){
                     progressDialog.dismiss();
                     rg_password.setError("The Password Doesn't Match");
@@ -132,7 +132,7 @@ public class registration extends AppCompatActivity {
                                      });
                                  }else {
                                      String status = "Hey I'm Using This Application";
-                                     imageuri = "https://firebasestorage.googleapis.com/v0/b/av-messenger-dc8f3.appspot.com/o/man.png?alt=media&token=880f431d-9344-45e7-afe4-c2cafe8a5257";
+                                     imageuri = "https://firebasestorage.googleapis.com/v0/b/av-messenger-76be0.appspot.com/o/firstway.png?alt=media&token=0066a52c-e0f2-4760-9c93-80887e1145d1";
                                      Users users = new Users(id,namee,emaill,Password,imageuri,status);
                                      reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                          @Override

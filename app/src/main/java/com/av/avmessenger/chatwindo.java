@@ -70,7 +70,6 @@ public class chatwindo extends AppCompatActivity {
         mmessagesAdpter = new messagesAdpter(chatwindo.this,messagesArrayList);
         messageAdpter.setAdapter(mmessagesAdpter);
 
-
         Picasso.get().load(reciverimg).into(profile);
         reciverNName.setText(""+reciverName);
 
